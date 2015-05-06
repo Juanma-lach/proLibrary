@@ -24,13 +24,13 @@
         String usuario = us.substring(0, 1).toUpperCase() + us.substring(1);
         String level = user.getObj_tipousuario().getDescripcion();
 %>
-<li>
+<li class="botones-izq">
     <%-- 
     <a href="#"> <i class="icon-user">Estás logueado como <%=usuario%> / <%=user.getTipoUsuario()%></i></a>
     --%>
     <a href="#"> <i class="glyphicon glyphicon-user"></i> <%=usuario%> (<%=level%>)</a>
 </li>
 
-<li><a href="jsp?ob=usuario&op=logout">Log Out</a></li>
+<li class="botones-izq"><a href="jsp?ob=usuario&op=logout">Salir</a></li>
     <%} else {%>
-<li><a href="jsp?op=login01&ob=usuario">Log In</a></li><%}%>
+<li><a href="jsp?op=login01&ob=usuario">Entrar</a></li><%}%>

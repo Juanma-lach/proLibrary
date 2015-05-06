@@ -38,7 +38,8 @@
         <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css"  />
         <link rel="stylesheet" href="css/skin/main.css">
         <link rel="stylesheet" href="css/skin/proyectos.css">
-        
+        <link rel="stylesheet" id="open-sans-css" href="//fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&amp;subset=latin%2Clatin-ext&amp;ver=4.1.1" type="text/css" media="all">
+
 
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -55,44 +56,46 @@
         <!-- Fixed navbar -->
 
         <div class="row">
-        <nav class="navbar navbar-inverse navbar-fixed-top col-md-12">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="jsp?ob=usuario&op=inicio">Proyectos DAW</a>
-                </div>
+            <nav class="navbar navbar-inverse navbar-fixed-top col-md-12">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header enlace">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="botones-izq" href="jsp?ob=usuario&op=inicio"><b class="glyphicon glyphicon-home"> </b>Proyectos DAW</a>
+                    </div>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li><a href="jsp?ob=usuario&op=inicio">Inicio <span class="sr-only">(current)</span></a></li>
-                    </ul>
-                    
-                    <%if (user != null){%>
-                    <ul class="nav navbar-nav navbar-left">
-                        <jsp:include page="jsp/menuSuperior.jsp" />
-                    </ul>
-                    <%}%>
-                    <ul class="nav navbar-nav navbar-right">
-                        <jsp:include page="jsp/usuario/infologin.jsp" />
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-        </nav>
-</div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="botones-izq">
+                            <li><a href="jsp?ob=usuario&op=inicio">Inicio <span class="sr-only">(current)</span></a></li>
+                        </ul>
+
+                        <%if (user != null) {%>
+                        <ul class="botones-izq">
+                            <jsp:include page="jsp/menuSuperior.jsp" />
+                        </ul>
+                        <%}%>
+                        <ul class="botones-izq botones-der">
+                            <jsp:include page="jsp/usuario/infologin.jsp" />
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
 
         <% if (user != null) {%>
 
 
-        <div class="row">
-           
-            <div class="col-md-12">
+        <div class="row"> 
+            <div class="col-md-1" id="menuLateral">
+                <jsp:include page="jsp/menuLateral.jsp" />
+            </div>
+            <div class="col-md-10 margen-contenido">
                 <div id="indexContenido"></div>
                 <div id="indexContenidoJsp">
                     <jsp:include page='<%=(String) request.getAttribute("contenido")%>' />                
@@ -101,11 +104,6 @@
         </div>
         <div class="row">
             <div class="col-md-12" id="contenidoParseado"></div>   
-        </div>
-        <div class="row">
-            <div class="col-md-11">
-                <hr><footer><p class="pull-right">&copy; <%=EstadoHelper.getAutor()%>: (<%=EstadoHelper.getAnyo()%>) - <%=EstadoHelper.getLicenciaLink()%></p></footer>
-            </div> 
         </div>
 
 
@@ -122,11 +120,6 @@
         <div class="row">
             <div class="col-md-12" id="contenidoParseado"></div>   
         </div>
-        <div class="row">
-            <div class="col-md-11">
-                <hr><footer><p class="pull-right">&copy; <%=EstadoHelper.getAutor()%>: (<%=EstadoHelper.getAnyo()%>) - <%=EstadoHelper.getLicenciaLink()%></p></footer>
-            </div>   
-        </div>
 
 
 
@@ -134,7 +127,7 @@
 
         <!-- carga de javascript   -->
 
-        <script type="text/javascript"  src="./js/vendor/jquery-1.11.1.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
         <script type="text/javascript"  src="./js/vendor/bootstrap.min.js"></script>
         <script type="text/javascript"  src="./js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
@@ -146,7 +139,7 @@
         <script type="text/javascript"  src="./js/vendor/bootstrapValidator.min.js"></script>
         <script type="text/javascript"  src="./js/vendor/language/es_ES.js"></script>
         <script type="text/javascript"  src="./js/vendor/creole-parser.js"></script>
-        
+
 
 
         <script src="js/generic/view.js" charset="UTF-8"></script>    
@@ -165,17 +158,37 @@
         <script src="js/specific/usuario/model.js" charset="UTF-8"></script>
         <script src="js/specific/usuario/view.js" charset="UTF-8"></script>
         <script src="js/specific/usuario/routes.js" charset="UTF-8"></script>
+        
+        <script src="js/specific/libro/control.js" charset="UTF-8"></script>
+        <script src="js/specific/libro/model.js" charset="UTF-8"></script>
+        <script src="js/specific/libro/view.js" charset="UTF-8"></script>
+        <script src="js/specific/libro/routes.js" charset="UTF-8"></script>
+        
+        <script src="js/specific/cliente/control.js" charset="UTF-8"></script>
+        <script src="js/specific/cliente/model.js" charset="UTF-8"></script>
+        <script src="js/specific/cliente/view.js" charset="UTF-8"></script>
+        <script src="js/specific/cliente/routes.js" charset="UTF-8"></script>
+        
+        <script src="js/specific/compra/control.js" charset="UTF-8"></script>
+        <script src="js/specific/compra/model.js" charset="UTF-8"></script>
+        <script src="js/specific/compra/view.js" charset="UTF-8"></script>
+        <script src="js/specific/compra/routes.js" charset="UTF-8"></script>
+        
+        <script src="js/specific/stock/control.js" charset="UTF-8"></script>
+        <script src="js/specific/stock/model.js" charset="UTF-8"></script>
+        <script src="js/specific/stock/view.js" charset="UTF-8"></script>
+        <script src="js/specific/stock/routes.js" charset="UTF-8"></script>        
 
         <script src="js/specific/tipousuario/control.js" charset="UTF-8"></script>
         <script src="js/specific/tipousuario/model.js" charset="UTF-8"></script>
         <script src="js/specific/tipousuario/view.js" charset="UTF-8"></script>
         <script src="js/specific/tipousuario/routes.js" charset="UTF-8"></script>
-        
+
         <script src="js/specific/proyecto/control.js" charset="UTF-8"></script>
         <script src="js/specific/proyecto/model.js" charset="UTF-8"></script>
         <script src="js/specific/proyecto/view.js" charset="UTF-8"></script>
         <script src="js/specific/proyecto/routes.js" charset="UTF-8"></script>
-        
+
         <script src="js/specific/alumno/control.js" charset="UTF-8"></script>
         <script src="js/specific/alumno/model.js" charset="UTF-8"></script>
         <script src="js/specific/alumno/view.js" charset="UTF-8"></script>
@@ -194,6 +207,10 @@
                 inicializacion();
 
                 fUsuarioRoutes();
+                fLibroRoutes();
+                fClienteRoutes();
+                fCompraRoutes();
+                fStockRoutes();
                 fTipousuarioRoutes();
                 fProyectoRoutes();
                 fAlumnoRoutes();

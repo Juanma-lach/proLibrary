@@ -15,31 +15,16 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
-package net.daw.helper;
+package net.daw.control.operation.generic.specific.implementation;
 
-public class ConnectionClassHelper {
+import java.lang.reflect.InvocationTargetException;
+import javax.servlet.http.HttpServletRequest;
+import net.daw.control.operation.generic.implementation.ControlOperationGenImpl;
 
-    public static String getDatabaseName() {
-        return "prolibrery";
+public class LibroControlOperationGenSpImpl extends ControlOperationGenImpl {
+
+    public LibroControlOperationGenSpImpl(HttpServletRequest request) throws ClassNotFoundException, NoSuchMethodException, InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, Exception {
+        super(request);
     }
 
-    public static String getDatabaseLogin() {
-        return "root";
-    }
-
-    public static String getDatabasePassword() {
-        return "bitnami";
-    }
-
-    public static String getDatabasePort() {
-        return "3306";
-    }
-
-    public static String getDatabaseHost() {
-        return "127.0.0.1";
-    }
-
-    public static String getConnectionChain() {
-        return "jdbc:mysql://" + ConnectionClassHelper.getDatabaseHost() + ":" + ConnectionClassHelper.getDatabasePort() + "/" + ConnectionClassHelper.getDatabaseName();
-    }
 }

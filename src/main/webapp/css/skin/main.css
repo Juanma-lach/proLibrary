@@ -1,6 +1,7 @@
 
 body{
-  background-color: #efefef;
+    background-color: #efefef;
+    font-family: "Open Sans",sans-serif;
 }
 
 
@@ -9,17 +10,26 @@ body{
 }
 
 .margen-superior{
-    margin-top: 80px;
+    margin-top: 60px;
 }
 .margen-superiorForm{
     margin-top: 70px;
     margin-left: 20px;
 }
 
+.margen-contenido {
+    margin-left: 60px;
+}
+
 /* Navbar */
+.navbar {
+    border: 0;
+    min-height: 32px;
+    height: 32px;
+}
 
 .navbar, .dropdown-menu{
-    background-color:#45525e;
+    background-color:#176185;
 }
 
 .dropdown-menu a:hover, .navbar a:hover{
@@ -29,6 +39,58 @@ body{
     color: #e8e8e8 !important;
 }
 
+.botones-izq {
+    padding: 0;
+    float: left;
+    height: 32px !important;
+}
+
+.botones-izq > li {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 32px !important;
+    padding-top: 7px;
+}
+
+.botones-izq > li:hover {
+    background-color: #578CA7 !important;
+}
+
+.botones-izq > li > a:hover {
+    background-color: #578CA7 !important;
+    text-decoration: none;
+}
+
+.botones-izq > li > a {
+    text-decoration: none;
+}
+.enlace {  
+}
+
+.enlace > a {
+    padding-left: 15px;
+    padding-right: 15px;  
+    padding-top: 7px;
+}
+
+.enlace > a:hover {
+    background-color: #578CA7 !important;
+    text-decoration: none;
+}
+
+.container {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+ b {
+    margin-right: 10px;
+}
+
+.botones-der {
+    float: right;
+    margin-left: 200px;
+}
 
 /* Intro de la pagina de inicio */
 .intro {
@@ -42,7 +104,7 @@ body{
 
 
 .informaInicio {
-margin-top: 10px;
+    margin-top: 10px;
 }
 
 
@@ -52,7 +114,7 @@ margin-top: 10px;
     width: 100%;
     height: 600px;
 
-       
+
 }
 
 
@@ -102,16 +164,16 @@ margin-top: 10px;
 .proyectosMostrar{
     margin-top: 80px;
     margin-left: 70px;
-   
+
 }.proyectoCaja{
     margin-top: 30px;
     margin-left: 10px;
-    
+
 }
 
 #cdawrap{
     display: none;
-        
+
 }
 /*----------------------------------------*/
 
@@ -120,18 +182,72 @@ margin-top: 10px;
 
 /* Cabecera de las tablas */
 .panel-default > .panel-heading {
-    background-color:#74769d;
+    background-color:#2e7091;
     color:white;
 }
 
 th{
     min-width: 30px;
     color: whitesmoke;
-    background-color: #8f91b0;
+    background-color: #176185;
 }
 
 .datepicker th{
     background-color: white;
     color: black;
 }
+
+/* SIDEBAR */
+
+.sidebar {
+    border: 0;
+    border-radius: 0;
+    position: fixed;
+    margin-top: 32px;
+    width: 160px;
+    height: 900px;
+    background-color: #176185;
+}
+
+.list-group-item {
+    border: 0;
+    border-radius: 0 !important;
+    color: whitesmoke !important;
+    background-color: #176185;
+}
+
+.list-group-item:hover {
+    cursor: pointer;
+    border: 0;
+    border-radius: 0 !important;
+    color: whitesmoke !important;
+    background-color: #2e7091 !important;
+}
+
+ul li {
+    list-style: none;
+}
+
+.navegador, .subnavegador{
+    padding: 0;
+}
+
+.navegador{
+    margin-top: 10px;
+}
+
+.navegador > li > p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.subnavegador > li > a, .subnavegador > li > a:visited {
+    font-size: 13px;
+    font-weight: 600;
+    background-color: #2e7091;
+    padding-left: 30px;
+
+}
+
+
 

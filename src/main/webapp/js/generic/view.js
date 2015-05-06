@@ -27,7 +27,7 @@ view.prototype.printValue = function (value, valor, recortar) {
     var strResult = "";
     if (/obj_/.test(valor)) {
         if (value[valor].id > 0) {
-            strResult = '<a href="jsp#/' + valor.substring(4) + '/view/' + value[valor].id + '">' + value[valor].id + ":" + util().getForeign(value[valor]) + '</a>';
+            strResult = '<a href="jsp#/' + valor.substring(4) + '/view/' + value[valor].id + '">' + util().getFirstForeign(value[valor]) + '</a>';
         } else {
             strResult = '???';
         }

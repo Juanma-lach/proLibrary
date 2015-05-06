@@ -15,31 +15,29 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
-package net.daw.helper;
+package net.daw.bean.generic.specific.implementation;
 
-public class ConnectionClassHelper {
+import com.google.gson.annotations.Expose;
+import net.daw.bean.generic.implementation.BeanGenImpl;
+import net.daw.bean.publicinterface.BeanInterface;
 
-    public static String getDatabaseName() {
-        return "prolibrery";
+public class TipoclienteBeanGenSpImpl extends BeanGenImpl implements BeanInterface {
+    @Expose
+    private String descripcion = "";
+
+    public TipoclienteBeanGenSpImpl() {
+
     }
 
-    public static String getDatabaseLogin() {
-        return "root";
+    public TipoclienteBeanGenSpImpl(Integer id) {
+        super(id);
     }
 
-    public static String getDatabasePassword() {
-        return "bitnami";
+    public String getDescripcion() {
+        return descripcion;
     }
 
-    public static String getDatabasePort() {
-        return "3306";
-    }
-
-    public static String getDatabaseHost() {
-        return "127.0.0.1";
-    }
-
-    public static String getConnectionChain() {
-        return "jdbc:mysql://" + ConnectionClassHelper.getDatabaseHost() + ":" + ConnectionClassHelper.getDatabasePort() + "/" + ConnectionClassHelper.getDatabaseName();
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
 }

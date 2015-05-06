@@ -17,11 +17,8 @@
 --%>
 
 
-<ul class="nav navbar-nav">
- <li><a href="jsp#/proyecto/mostrar">Proyectos<span class="sr-only">(current)</span></a></li>
- </ul>
 <li class="dropdown">
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Panel de Administracion <b class="caret"></b></a>
+    <a href="#" data-toggle="dropdown">Panel de Administracion <b class="caret"></b></a>
     <ul class="dropdown-menu">
         <li class="dropdown-header">Gestión de usuarios</li>
         <li><a href="jsp#/usuario">Usuario</a></li>
@@ -33,6 +30,8 @@
         <li><a href="jsp#/proyecto">Proyecto</a></li>         
     </ul>
 </li>    
+
+<script type="text/javascript"  src="./js/vendor/jquery-1.11.1.min.js"></script>
 
 
 

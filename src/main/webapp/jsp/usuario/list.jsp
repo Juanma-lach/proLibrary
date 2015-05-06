@@ -37,13 +37,10 @@
                 <br />
 
                 <div class="row">
-                    <div class="col-md-4">
-                        <div id="registers"></div>
-                    </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-md-offset-4">
                         <div id="order"></div> 
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3 col-md-offset-1">
                         <div id="filter"></div>   
                     </div>
                 </div>
@@ -51,18 +48,7 @@
                 <div id="pane1" class="tab-pane active">
                     <div class="row">
 
-                        <div class="col-md-2">
-                            <div class="panel panel-default">                                 
-                                <div class="panel-heading">Nuevo</div>
-                                <div class="panel-body">
-                                    <br />
-                                    <div class="text-center">
-                                        <a class="btn btn-primary" href='jsp#/<%=strNombreMantenimiento%>/new'>Nuevo <%=strNombreMantenimiento%></a> 
-                                    </div>
-                                    <br />
-                                </div>
-                            </div>
-                        </div>
+                        
 
 
 
@@ -90,7 +76,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-7">
                                 <div class="panel panel-default">
                                     <!-- Default panel contents -->
                                     <div class="panel-heading">Filtro</div>

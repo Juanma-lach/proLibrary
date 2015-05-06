@@ -46,6 +46,24 @@ var util = function () {
                 strResult = strResult.substr(0, 20) + " ...";
             return strResult;
         },
+        getFirstForeign: function (objForeign) {
+            //falta organizar con metadatos para mostrar sólo los campos relevantes
+            var numKeys = 2;
+            var strResult = "";
+            for (counter = 0; counter < numKeys - 1; counter++) {
+                if (Object.keys(objForeign)[counter] != 'password') {
+                    if (Object.keys(objForeign)[counter].substring(0, 4) != 'obj_') {
+                        valor = objForeign[Object.keys(objForeign)[counter]];
+                        if (valor != true && valor != false)
+                            strResult += " " + valor;
+                    }
+                }
+            }
+            //if (typeof fieldContent == "string") {
+            if (strResult.length > 50) //don't show too long fields
+                strResult = strResult.substr(0, 20) + " ...";
+            return strResult;
+        },
         loadForm: function (modalName, headerData, bodyData, footerData, keyb) {
             $(modalName + ' .modal-header').empty().append(headerData);
             $(modalName + ' .modal-body').empty().append(bodyData);

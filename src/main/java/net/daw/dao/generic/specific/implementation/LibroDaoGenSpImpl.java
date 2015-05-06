@@ -15,31 +15,16 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
-package net.daw.helper;
+package net.daw.dao.generic.specific.implementation;
 
-public class ConnectionClassHelper {
+import net.daw.dao.generic.implementation.TableDaoGenImpl;
+import java.sql.Connection;
+import net.daw.bean.generic.specific.implementation.LibroBeanGenSpImpl;
 
-    public static String getDatabaseName() {
-        return "prolibrery";
+public class LibroDaoGenSpImpl extends TableDaoGenImpl<LibroBeanGenSpImpl> {
+
+    public LibroDaoGenSpImpl(String strFuente, Connection pooledConnection) throws Exception {
+        super(strFuente, "libro", pooledConnection);
     }
 
-    public static String getDatabaseLogin() {
-        return "root";
-    }
-
-    public static String getDatabasePassword() {
-        return "bitnami";
-    }
-
-    public static String getDatabasePort() {
-        return "3306";
-    }
-
-    public static String getDatabaseHost() {
-        return "127.0.0.1";
-    }
-
-    public static String getConnectionChain() {
-        return "jdbc:mysql://" + ConnectionClassHelper.getDatabaseHost() + ":" + ConnectionClassHelper.getDatabasePort() + "/" + ConnectionClassHelper.getDatabaseName();
-    }
 }

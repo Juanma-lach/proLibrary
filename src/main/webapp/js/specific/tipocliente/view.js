@@ -1,5 +1,5 @@
-/*
- * Copyright (C) July 2014 Rafael Aznar
+/* 
+ * Copyright (C) 2014 raznara
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -15,31 +15,18 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
-package net.daw.helper;
 
-public class ConnectionClassHelper {
 
-    public static String getDatabaseName() {
-        return "prolibrery";
-    }
+var tipoTipoClienteView = function (strClase) {
+    this.clase = strClase;
+};
+tipoTipoClienteView.prototype = new view('tipoTipoCliente');
+tipoTipoClienteView.prototype.getClassNameTipoCliente = function () {
+    return this.getClassName() + "Vista";
+};
+var oTipoClienteView = new tipoTipoClienteView('tipoTipoCliente');
 
-    public static String getDatabaseLogin() {
-        return "root";
-    }
 
-    public static String getDatabasePassword() {
-        return "bitnami";
-    }
-
-    public static String getDatabasePort() {
-        return "3306";
-    }
-
-    public static String getDatabaseHost() {
-        return "127.0.0.1";
-    }
-
-    public static String getConnectionChain() {
-        return "jdbc:mysql://" + ConnectionClassHelper.getDatabaseHost() + ":" + ConnectionClassHelper.getDatabasePort() + "/" + ConnectionClassHelper.getDatabaseName();
-    }
-}
+tipoTipoClienteView.prototype.okValidation = function (f) {
+    $('#tipoTipoClienteForm').on('success.form.bv', f);
+};
