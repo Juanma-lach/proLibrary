@@ -120,20 +120,19 @@ body{
 
 /*formulario de entrada*/
 .formLogueo{
-    margin-top: 20px;
-    background-color: #d6d6d6;
-    height: 320px;
+    margin-top: 150px;
+    border: 1px solid whitesmoke;
+    background-color: white;
+    height: 260px;
     width: 420px;
     padding-left: 10px;
     color:black;
-    background-image: url(../../images/logo.png);
-    background-repeat: no-repeat;
 }
 
 
 .parteUsu{
-    padding-top: 80px;
-    padding-left: 20px;
+    padding-top: 15px;
+    padding-left: 30px;
 }
 
 #inputLogin{
@@ -143,7 +142,7 @@ body{
 
 .partePass{
     margin-top: 20px;
-    padding-left: 20px;
+    padding-left: 30px;
 }
 
 #inputPassword{
@@ -153,10 +152,10 @@ body{
 
 
 .entrar{
-    background-color: #141414;
+    background-color: #176185;
     color: white;
     width: 150px;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 
@@ -249,5 +248,18 @@ ul li {
 
 }
 
+/* ESCRITORIO */
 
+.bloque {
+    float: left;
+    border: 1px solid whitesmoke;
+    background-color: white;
+    padding: 20px;
+    margin-top: 50px;
+    
+}
+
+.bloque:nth-child(3), .bloque:nth-child(4),.bloque:nth-child(1) {
+    margin-left: 50px;
+}
 

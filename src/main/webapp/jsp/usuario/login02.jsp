@@ -18,11 +18,12 @@
 
 <%@page import="net.daw.bean.generic.specific.implementation.UsuarioBeanGenSpImpl"%>
 <% UsuarioBeanGenSpImpl oUsuario = (UsuarioBeanGenSpImpl) request.getSession().getAttribute("usuarioBean"); %>
-<% if (oUsuario==null){ %>
+<% if (oUsuario==null){%>
 
 <div class="margen-superiorForm">
     <h1>Vd. no ha entrado en el sistema</h1>
     <h4>Ha habido un problema con su autenticación. Revise su login o su password.</h4>
+    <a href="jsp?ob=usuario&op=logout">Volver atrás.</a>
 </div>
 
 <% } else { %>

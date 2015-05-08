@@ -17,4 +17,4 @@
 --%>
 
 
-<meta http-equiv="refresh" content="0; url=jsp?ob=usuario&op=inicio"> 
+<meta http-equiv="refresh" content="0; url=jsp?op=login01&ob=usuario"> 

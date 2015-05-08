@@ -31,6 +31,9 @@ public class ControlRouteGenImpl implements ControlRouteInterface {
         String jsonResult = "";
         try {
             switch (operation) {
+                 case "getcount":
+                    jsonResult = oControl.get(request);
+                    break;
                 case "get":
                     jsonResult = oControl.get(request);
                     break;

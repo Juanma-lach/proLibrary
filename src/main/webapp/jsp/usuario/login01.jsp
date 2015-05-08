@@ -19,7 +19,7 @@
 <%@page import="net.daw.helper.EstadoHelper"%>
 <div class="container margen-superior">
     <div class="row">
-        <div class=" col-sm-6 col-md-4 col-md-offset-4">
+        <div class=" col-sm-6 col-md-4 col-md-offset-5">
             <div class="formLogueo">
                 
                 <form class="form-signin" id="loginForm" action="jsp" role="form" method="post">                                    
