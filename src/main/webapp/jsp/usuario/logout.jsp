@@ -16,6 +16,7 @@
  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 --%>
 <div class="margen-superiorForm">
+    <meta HTTP-EQUIV="REFRESH" CONTENT="2;url=jsp">
     <h1>Vd. ha salido del sistema</h1>
     <h4>Hasta pronto.</h4>
 </div>

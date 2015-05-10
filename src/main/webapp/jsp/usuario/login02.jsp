@@ -21,6 +21,7 @@
 <% if (oUsuario==null){%>
 
 <div class="margen-superiorForm">
+    <meta HTTP-EQUIV="REFRESH" CONTENT="3;url=jsp">
     <h1>Vd. no ha entrado en el sistema</h1>
     <h4>Ha habido un problema con su autenticación. Revise su login o su password.</h4>
     <a href="jsp?ob=usuario&op=logout">Volver atrás.</a>
@@ -28,6 +29,7 @@
 
 <% } else { %>
 <div class="margen-superiorForm">
+    <meta HTTP-EQUIV="REFRESH" CONTENT="3;url=jsp">
     <h1 class="margen-superior">Vd. ha entrado en el sistema</h1>
     <h4>Bienvenido, <%=oUsuario.getLogin() %>. Ahora puede operar con los menús de la aplicación.</h4>
 </div>

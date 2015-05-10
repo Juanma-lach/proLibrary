@@ -54,7 +54,7 @@
         <![endif]-->
 
         <!-- Fixed navbar -->
-
+        <%if (user != null) {%>
         <div class="row">
             <nav class="navbar navbar-inverse navbar-fixed-top col-md-12">
                 <div class="container">
@@ -87,6 +87,7 @@
                 </div><!-- /.container-fluid -->
             </nav>
         </div>
+        <%}%>
 
         <% if (user != null) {%>
 
@@ -158,22 +159,22 @@
         <script src="js/specific/usuario/model.js" charset="UTF-8"></script>
         <script src="js/specific/usuario/view.js" charset="UTF-8"></script>
         <script src="js/specific/usuario/routes.js" charset="UTF-8"></script>
-        
+
         <script src="js/specific/libro/control.js" charset="UTF-8"></script>
         <script src="js/specific/libro/model.js" charset="UTF-8"></script>
         <script src="js/specific/libro/view.js" charset="UTF-8"></script>
         <script src="js/specific/libro/routes.js" charset="UTF-8"></script>
-        
+
         <script src="js/specific/cliente/control.js" charset="UTF-8"></script>
         <script src="js/specific/cliente/model.js" charset="UTF-8"></script>
         <script src="js/specific/cliente/view.js" charset="UTF-8"></script>
         <script src="js/specific/cliente/routes.js" charset="UTF-8"></script>
-        
+
         <script src="js/specific/compra/control.js" charset="UTF-8"></script>
         <script src="js/specific/compra/model.js" charset="UTF-8"></script>
         <script src="js/specific/compra/view.js" charset="UTF-8"></script>
         <script src="js/specific/compra/routes.js" charset="UTF-8"></script>
-        
+
         <script src="js/specific/stock/control.js" charset="UTF-8"></script>
         <script src="js/specific/stock/model.js" charset="UTF-8"></script>
         <script src="js/specific/stock/view.js" charset="UTF-8"></script>

@@ -74,6 +74,10 @@ public class JspControl extends HttpServlet {
                     mode = "wrappered";
                 }
             }
+
+            if (request.getSession().getAttribute("usuarioBean") != null && request.getParameter("op") == null) {
+                op = "escritorio";
+            }
             //login & logout management
             if (ob.equalsIgnoreCase("usuario")) {
                 if (op.equalsIgnoreCase("login02")) {

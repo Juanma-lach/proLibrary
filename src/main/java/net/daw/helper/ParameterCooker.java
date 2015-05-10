@@ -76,7 +76,7 @@ public class ParameterCooker {
     public static String prepareOperation(HttpServletRequest request) {
         String result = null;
         if (request.getParameter("op") == null) {
-            result = "inicio";
+            result = "login01";
         } else {
             result = request.getParameter("op");
         }
