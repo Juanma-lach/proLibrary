@@ -19,9 +19,9 @@
 var tipoClienteControl = function (strClase) {
     this.clase = strClase;
 };
-tipoClienteControl.prototype = new control('tipoCliente');
+tipoClienteControl.prototype = new control('tipocliente');
 tipoClienteControl.prototype.getClassNameTipoCliente = function () {
     return this.getClassName() + "Control";
 };
-var oTipoClienteControl = new tipoClienteControl('tipoCliente');
+var oTipoClienteControl = new tipoClienteControl('tipocliente');
 

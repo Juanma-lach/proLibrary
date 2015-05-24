@@ -49,7 +49,7 @@
     </div>
     
     <div class="form-group">
-        <label class="col-sm-2 control-label"  for="urlimagen">Url Imagen</label>
+        <label class="col-sm-2 control-label"  for="urlimagen">Url Imagen:</label>
         <div class="col-sm-10">
             <input type="text"  class="form-control"  id="urlimagen" name="urlimagen" size="15" placeholder="Introduce una url directa a la imagen" />
         </div>
@@ -57,7 +57,7 @@
     
     
     <div class="form-group">
-        <label class="col-sm-2 control-label"  for="puntuacion">Puntuación</label>
+        <label class="col-sm-2 control-label"  for="puntuacion">Puntuación:</label>
         <div class="col-sm-10">
             <input type="text"  class="form-control"  id="puntuacion" name="puntuacion" size="15" placeholder="Introduce una puntuacion para la imagen" />
         </div>
@@ -115,13 +115,6 @@
                             validators: {
                                 notEmpty: {
                                     message: 'Debe introducir una editorial'
-                                }
-                            }
-                        },
-                        urlimagen: {
-                            validators: {
-                                notEmpty: {
-                                    message: 'Debe introducir una url en el campo imagen'
                                 }
                             }
                         }

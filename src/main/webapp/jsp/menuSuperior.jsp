@@ -17,20 +17,6 @@
 --%>
 
 
-<li class="dropdown">
-    <a href="#" data-toggle="dropdown">Panel de Administracion <b class="caret"></b></a>
-    <ul class="dropdown-menu">
-        <li class="dropdown-header">Gestión de usuarios</li>
-        <li><a href="jsp#/usuario">Usuario</a></li>
-        <li><a href="jsp#/tipousuario">Tipo Usuario</a></li>
-        <li class="divider"></li>
-        <li class="dropdown-header">Gestión de alumnos</li>
-        <li><a href="jsp#/alumno">Alumnos</a></li>
-        <li class="dropdown-header">Gestión de Proyectos</li>
-        <li><a href="jsp#/proyecto">Proyecto</a></li>         
-    </ul>
-</li>    
-
 <script type="text/javascript"  src="./js/vendor/jquery-1.11.1.min.js"></script>
 
 

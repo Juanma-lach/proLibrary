@@ -20,17 +20,21 @@
 <% UsuarioBeanGenSpImpl oUsuario = (UsuarioBeanGenSpImpl) request.getSession().getAttribute("usuarioBean"); %>
 <% if (oUsuario==null){%>
 
-<div class="margen-superiorForm">
+<div class="margen-superiorForm col-md-6 col-md-offset-3">
     <meta HTTP-EQUIV="REFRESH" CONTENT="3;url=jsp">
     <h1>Vd. no ha entrado en el sistema</h1>
     <h4>Ha habido un problema con su autenticación. Revise su login o su password.</h4>
     <a href="jsp?ob=usuario&op=logout">Volver atrás.</a>
+    <p>Redireccionando a la página de logueo...</p>
+    <div class="spinner col-md-3 col-md-offset-3"></div>
 </div>
 
 <% } else { %>
-<div class="margen-superiorForm">
+<div class="margen-superiorForm col-md-6 col-md-offset-3">
     <meta HTTP-EQUIV="REFRESH" CONTENT="3;url=jsp">
     <h1 class="margen-superior">Vd. ha entrado en el sistema</h1>
     <h4>Bienvenido, <%=oUsuario.getLogin() %>. Ahora puede operar con los menús de la aplicación.</h4>
+    <p>Redireccionando al Escritorio, espere un momento...</p>
+    <div class="spinner col-md-4 col-md-offset-3"></div>
 </div>
     <% } %>

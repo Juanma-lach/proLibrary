@@ -20,8 +20,8 @@
 var tipoTipoClienteModel = function (strClase) {
     this.clase = strClase;
 };
-tipoTipoClienteModel.prototype = new model('tipoTipoCliente');
+tipoTipoClienteModel.prototype = new model('tipocliente');
 tipoTipoClienteModel.prototype.getClassNameTipoCliente = function () {
     return this.getClassName() + "Modelo";
 };
-var oTipoClienteModel = new tipoTipoClienteModel('tipoTipoCliente');
+var oTipoClienteModel = new tipoTipoClienteModel('tipocliente');

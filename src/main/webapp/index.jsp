@@ -32,7 +32,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="css/bootstrap.min.css">
-
+        <link rel="shortcut icon" href="images/library-logo.png">
         <!-- <link rel="stylesheet" href="css/jquery-ui.css"> -->
         <link rel="stylesheet" href="css/bootstrapValidator.min.css">
         <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css"  />
@@ -57,7 +57,7 @@
         <%if (user != null) {%>
         <div class="row">
             <nav class="navbar navbar-inverse navbar-fixed-top col-md-12">
-                <div class="container">
+                <div class="sinmargin">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header enlace">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -70,7 +70,7 @@
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <div class="porcien" id="bs-example-navbar-collapse-1">
                         <ul class="botones-izq">
                             <li><a href="jsp?ob=usuario&op=inicio">Inicio <span class="sr-only">(current)</span></a></li>
                         </ul>
@@ -184,6 +184,11 @@
         <script src="js/specific/tipousuario/model.js" charset="UTF-8"></script>
         <script src="js/specific/tipousuario/view.js" charset="UTF-8"></script>
         <script src="js/specific/tipousuario/routes.js" charset="UTF-8"></script>
+        
+        <script src="js/specific/tipocliente/control.js" charset="UTF-8"></script>
+        <script src="js/specific/tipocliente/model.js" charset="UTF-8"></script>
+        <script src="js/specific/tipocliente/view.js" charset="UTF-8"></script>
+        <script src="js/specific/tipocliente/routes.js" charset="UTF-8"></script>
 
         <script src="js/specific/proyecto/control.js" charset="UTF-8"></script>
         <script src="js/specific/proyecto/model.js" charset="UTF-8"></script>
@@ -213,6 +218,7 @@
                 fCompraRoutes();
                 fStockRoutes();
                 fTipousuarioRoutes();
+                fTipoClienteRoutes();
                 fProyectoRoutes();
                 fAlumnoRoutes();
 

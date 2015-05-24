@@ -26,7 +26,7 @@
     String strNombreMantenimiento = "tipocliente";
     Connection connection = (Connection) request.getAttribute("connection");    
 %>
-<div class="row">
+<div class="row tipocliente">
     <div class="col-md-12">
         <div class="tabbable">
             <ul class="nav nav-tabs">

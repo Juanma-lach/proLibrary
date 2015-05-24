@@ -27,7 +27,8 @@
             <li><p href="#" class="desplegable list-group-item" title="Gestión de usuarios"><b class="glyphicon glyphicon-user"> </b>Usuarios</p>
                 <ul class="subnavegador">
                     <li><a class="list-group-item" href="jsp#/usuario" title="Lista de Usuarios">Lista de Usuarios</a></li>			
-                    <li><a class="list-group-item" href="jsp#/usuario/new" title="Crear un nuevo Usuario">Crear un nuevo Usuario</a></li>
+                    <li><a class="list-group-item" href="jsp#/usuario/new" title="Crear un nuevo Usuario">Crear un nuevo Usuario</a></li>			
+                    <li><a class="list-group-item" href="jsp#/tipousuario" title="Listado de Tipos de Usuarios">Listado de Tipos</a></li>
                 </ul>
             </li>
             <li><p href="#" class="desplegable list-group-item" title="Gestión de libros"><b class="glyphicon glyphicon-book"> </b>Libros</p>
@@ -36,16 +37,11 @@
                     <li><a class="list-group-item" href="jsp#/libro/new" title="Crear un nuevo Libro">Crear un nuevo Libro</a></li>
                 </ul>
             </li>
-            <li><p href="#" class="desplegable list-group-item" title="Gestión de libros"><b class="glyphicon glyphicon-flash"> </b>Ofertas</p>
-                <ul class="subnavegador">
-                    <li><a class="list-group-item" href="jsp#/oferta" title="Lista de Ofertas">Lista de Ofertas</a></li>			
-                    <li><a class="list-group-item" href="jsp#/oferta/new" title="Crear un nuevo Oferta">Crear un nuevo Oferta</a></li>
-                </ul>
-            </li>
             <li><p href="#" class="desplegable list-group-item" title="Gestión de Clientes"><b class="glyphicon glyphicon-tag"> </b>Clientes</p>
                 <ul class="subnavegador">
                     <li><a class="list-group-item" href="jsp#/cliente" title="Todos los Clientes">Todos los Clientes</a></li>			
-                    <li><a class="list-group-item" href="jsp#/cliente/new" title="Añadir un nuevo Cliente">Añadir un nuevo Cliente</a></li>
+                    <li><a class="list-group-item" href="jsp#/cliente/new" title="Añadir un nuevo Cliente">Añadir un nuevo Cliente</a></li>			
+                    <li><a class="list-group-item" href="jsp#/tipocliente" title="Listado de Tipos de Clientes">Listado de Tipos</a></li>
                 </ul>
             </li>
         </ul>

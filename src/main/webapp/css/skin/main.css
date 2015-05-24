@@ -13,8 +13,7 @@ body{
     margin-top: 60px;
 }
 .margen-superiorForm{
-    margin-top: 70px;
-    margin-left: 20px;
+    margin-top: 200px;
 }
 
 .margen-contenido {
@@ -120,7 +119,7 @@ body{
 
 /*formulario de entrada*/
 .formLogueo{
-    margin-top: 150px;
+    margin-top: 10px;
     border: 1px solid whitesmoke;
     background-color: white;
     height: 260px;
@@ -287,4 +286,32 @@ ul li {
 .h1escritorio {
     font-size: 23px;
     margin-top: 70px;
+}
+
+/* SPINNER */
+
+.spinner {
+    background: url(../../images/spinner.gif) no-repeat;
+    height: 318px;
+    background-size: 200px 100px;
+}
+
+.porcien {
+    width: 100% !important;
+}
+
+.sinmargin {
+    margin: 0;
+}
+
+/* LOGO LOGIN */
+
+.logo-login {
+    background: url(../../images/library-logo-login.png) no-repeat;
+    height: 238px;
+    width: 200px;
+}
+
+.logo-login-margin {
+    margin-left: 20px;
 }

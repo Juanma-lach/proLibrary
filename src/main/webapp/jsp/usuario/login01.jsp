@@ -16,10 +16,16 @@
  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 --%>
 
+<%@page import="net.daw.bean.generic.specific.implementation.UsuarioBeanGenSpImpl"%>
 <%@page import="net.daw.helper.EstadoHelper"%>
+<% UsuarioBeanGenSpImpl oUsuario = (UsuarioBeanGenSpImpl) request.getSession().getAttribute("usuarioBean"); %>
+<% if (oUsuario==null){%>
 <div class="container margen-superior">
     <div class="row">
-        <div class=" col-sm-6 col-md-4 col-md-offset-5">
+        <div class="col-sm-4 col-md-4 col-md-offset-7 col-sm-offset-5">
+            <div class="logo-login-margin logo-login"></div>
+        </div>
+        <div class=" col-sm-4 col-md-4 col-md-offset-6 col-sm-offset-4">
             <div class="formLogueo">
                 
                 <form class="form-signin" id="loginForm" action="jsp" role="form" method="post">                                    
@@ -28,12 +34,12 @@
 
                     <div class="parteUsu">
                         <label class="control-label" for="inputLogin" style="margin-top: 15px">Usuario:</label>
-                        <input value="" class="form-control"  id="inputLogin" type="text" placeholder="nombre de usuario" required="" autofocus="" name="login" />                                                    
+                        <input value="" class="form-control"  id="inputLogin" type="text" placeholder="Nombre de usuario" required="" autofocus="" name="login" />                                                    
                     </div>
 
                     <div class="partePass">
                         <label class="control-label" for="password" style="margin-top: 15px">Contraseña:</label>
-                        <input value="" class="form-control" type="password" id="inputPassword" placeholder="contraseña"  required="" name="password" />                                                               
+                        <input value="" class="form-control" type="password" id="inputPassword" placeholder="Contraseña"  required="" name="password" />                                                               
                     </div>
 
                     <div class="botonesLogin">
@@ -45,5 +51,6 @@
         </div>
     </div>
 </div>
-
-
+<% }else{ %>
+<h2 class="margen-superior">Usted ya se ha logeado como <%=oUsuario.getLogin() %></h2>
+<% } %>
