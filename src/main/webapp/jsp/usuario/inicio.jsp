@@ -30,7 +30,7 @@
 </div>-->
 
 
-<div class="intro">
+<!--<div class="intro">
     
 </div>
 
@@ -80,4 +80,4 @@
             <li>Ajax Stock soporta Relaciones M:M</li>
         </ul>
     </div>
-</div>
+</div>-->

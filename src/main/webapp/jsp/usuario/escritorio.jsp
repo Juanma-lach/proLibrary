@@ -10,21 +10,23 @@
     if (level != null) {%>
 
 <h1 class="h1escritorio col-sm-9 col-sm-offset-2 col-md-offset-1">Escritorio</h1>
+
+<div id="bloque1" class="bloque col-md-3 col-sm-3 col-sm-offset-2 col-md-offset-1">
+    <p class="centered">Últimos Libros</p>
+    <div id="ultimosLibros" class="paddiv"></div>
+</div>
+<div id="bloque2" class="bloque col-md-3 col-sm-3 col-sm-offset-2 col-md-offset-1">
+    <p class="centered">Libros mejor valorados</p>
+    <div id="librosPuntuados" class="paddiv"></div>
+</div>
+<div id="bloque3" class="bloque col-md-3 col-sm-3 col-sm-offset-2 col-md-offset-1">
+    <p class="centered">Últimos Clientes</p>
+    <div id="ultimosClientes" class="paddiv"></div>
+</div>
+
 <div class="bloque bloque-superior col-md-10 col-sm-9 col-sm-offset-2 col-md-offset-1">
     <div id="countC" class="col-md-3 col-sm-3 col-sm-offset-2"></div>
     <div id="countL" class="col-md-3 col-sm-3 col-sm-offset-2"></div>
-</div>
-<div id="bloque1" class="bloque col-md-3 col-sm-3 col-sm-offset-2 col-md-offset-1">
-    <p>Últimos Libros</p>
-    <div id="ultimosLibros"></div>
-</div>
-<div id="bloque2" class="bloque col-md-3 col-sm-3 col-sm-offset-2 col-md-offset-1">
-    <p>Libros mejor valorados</p>
-    <div id="librosPuntuados"></div>
-</div>
-<div id="bloque3" class="bloque col-md-3 col-sm-3 col-sm-offset-2 col-md-offset-1">
-    <p>Últimos Clientes</p>
-    <div id="ultimosClientes"></div>
 </div>
 
 <%}%>

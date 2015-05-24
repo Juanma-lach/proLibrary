@@ -43,15 +43,15 @@
 
     <div class="form-group">
         <label class="col-sm-2 control-label"  for="telefono">Telefono:</label>
-        <div class="col-sm-10">
-            <input type="text"  class="form-control"  id="telefono" name="telefono" size="15" placeholder="Introduce el telefono del cliente" />
+        <div class="col-sm-6">
+            <input  type="tel" pattern="^[9|8|7|6]\d{8}$" class="form-control"  id="telefono" name="telefono" size="15" placeholder="Introduce el telefono del cliente" />
         </div>
     </div>
     
     <div class="form-group">
         <label class="col-sm-2 control-label" for="obj_tipocliente_id">Tipo de cliente:</label> 
         <div class="col-sm-2">              
-            <input  class="form-control"  id="obj_tipocliente_id" class="input-mini" name="id_tipocliente" type="text" size="5" maxlength="5" />  
+            <input readonly="true"  class="form-control"  id="obj_tipocliente_id" class="input-mini" name="id_tipocliente" type="text" size="5" maxlength="5" />  
         </div>
         <div class="col-sm-1">              
             <a class="btn btn-primary btn-sm" id="obj_tipocliente_button" href="#"><i class="glyphicon glyphicon-search"></i></a>

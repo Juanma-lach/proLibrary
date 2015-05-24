@@ -29,6 +29,10 @@ public class LibroBeanGenSpImpl extends BeanGenImpl implements BeanInterface {
     @Expose
     private String editorial = "";
     @Expose
+    private Integer cantidad = 0;
+    @Expose
+    private Double precio = 0.00;
+    @Expose
     private String urlimagen = "";
     @Expose
     private Double puntuacion = 0.0;
@@ -79,6 +83,22 @@ public class LibroBeanGenSpImpl extends BeanGenImpl implements BeanInterface {
 
     public void setPuntuacion(Double puntuacion) {
         this.puntuacion = puntuacion;
+    }
+
+    public Integer getCantidad() {
+        return cantidad;
+    }
+
+    public void setCantidad(Integer cantidad) {
+        this.cantidad = cantidad;
+    }
+
+    public Double getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(Double precio) {
+        this.precio = precio;
     }
 
     

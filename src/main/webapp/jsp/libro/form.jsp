@@ -30,38 +30,48 @@
     </div>
     <div class="form-group">
         <label class="col-sm-2 control-label"  for="titulo">Título:</label>
-        <div class="col-sm-6">
+        <div class="col-sm-5">
             <input type="text" id="titulo" class="form-control"  name="titulo" size="15" placeholder="Introduce el título del libro" />
         </div>
     </div>
     <div class="form-group">
         <label class="col-sm-2 control-label"  for="isbn">ISBN:</label>
-        <div class="col-sm-6">
+        <div class="col-sm-5">
             <input type="number" id="isbn" class="form-control"  name="isbn" size="15" placeholder="Introduce el código ISBN" />
         </div>
     </div>
 
     <div class="form-group">
         <label class="col-sm-2 control-label"  for="editorial">Editorial:</label>
-        <div class="col-sm-10">
+        <div class="col-sm-5">
             <input type="text"  class="form-control"  id="editorial" name="editorial" size="15" placeholder="Introduce la editorial del libro" />
         </div>
     </div>
     
     <div class="form-group">
-        <label class="col-sm-2 control-label"  for="urlimagen">Url Imagen:</label>
-        <div class="col-sm-10">
-            <input type="text"  class="form-control"  id="urlimagen" name="urlimagen" size="15" placeholder="Introduce una url directa a la imagen" />
+        <label class="col-sm-2 control-label"  for="cantidad">Cantidad:</label>
+        <div class="col-sm-2">
+            <input type="number" id="cantidad" class="form-control"  name="cantidad" size="15" placeholder="Cantidad de libros" />
         </div>
+    </div>
+    
+    <div class="form-group">
+        <label class="col-sm-2 control-label"  for="precio">Precio:</label>
+        <div class="col-sm-2">
+            <input type="text" id="precio" class="form-control"  name="precio" size="4" placeholder="Introduce un precio" />
+        </div>
+        <span class="col-sm-2 euros">euros.</span>
     </div>
     
     
     <div class="form-group">
         <label class="col-sm-2 control-label"  for="puntuacion">Puntuación:</label>
-        <div class="col-sm-10">
+        <div class="col-sm-5">
             <input type="text"  class="form-control"  id="puntuacion" name="puntuacion" size="15" placeholder="Introduce una puntuacion para la imagen" />
         </div>
     </div>
+    
+    
 
 
     <div class="form-group">
@@ -115,6 +125,27 @@
                             validators: {
                                 notEmpty: {
                                     message: 'Debe introducir una editorial'
+                                }
+                            }
+                        },
+                        cantidad: {
+                            validators: {
+                                notEmpty: {
+                                    message: 'Debe introducir una cantidad'
+                                }
+                            }
+                        },
+                        precio: {
+                            validators: {
+                                notEmpty: {
+                                    message: 'Debe introducir un precio'
+                                }
+                            }
+                        },
+                        puntuacion: {
+                            validators: {
+                                notEmpty: {
+                                    message: 'Debe introducir una puntuacion'
                                 }
                             }
                         }
