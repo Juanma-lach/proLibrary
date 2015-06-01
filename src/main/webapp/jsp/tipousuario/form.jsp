@@ -22,7 +22,7 @@
 %>
 
 <form class="form-horizontal" role="form" action="#" id="tipousuarioForm" name="formulario">
-    <div class="form-group">
+    <div class="form-group id-oculto">
         <label class="col-sm-2 control-label" for="id">Id:</label>
         <div class="col-sm-2">
             <input type="text" id="id" class="form-control"  name="id" placeholder="id" />

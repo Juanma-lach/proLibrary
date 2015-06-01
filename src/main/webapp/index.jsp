@@ -60,13 +60,8 @@
                 <div class="sinmargin">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header enlace">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="botones-izq" href="jsp?ob=usuario&op=inicio"><b class="glyphicon glyphicon-home"> </b>Proyectos DAW</a>
+                        
+                        <a class="botones-izq" href="jsp?ob=usuario&op=inicio"><b class="glyphicon glyphicon-home"> </b>ProLibrary</a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->

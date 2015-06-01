@@ -45,7 +45,7 @@ function fEscritorio() {
                 puntuacion = data.list[i].puntuacion;
                 ultimosP += "<tr>"
                 ultimosP += "<td>";
-                ultimosP += "<a href='jsp#/libro/view/" + id + "'>" + tituloP + "</a>";
+                ultimosP += "<a href='jsp#/libro/view/" + idP + "'>" + tituloP + "</a>";
                 ultimosP += "</td>";
                 ultimosP += "<td class='td-padding'>";
                 ultimosP += puntuacion;
@@ -69,7 +69,7 @@ function fEscritorio() {
                 isbn = data.list[i].isbn;
                 ultimosC += "<tr>"
                 ultimosC += "<td>";
-                ultimosC += "<a href='jsp#/cliente/view/" + id + "'>" + nombre + " " + apellidos + "</a>";
+                ultimosC += "<a href='jsp#/cliente/view/" + idC + "'>" + nombre + " " + apellidos + "</a>";
                 ultimosC += "</td>";
                 ultimosC += "<td class='td-padding'>";
                 ultimosC += tipo;
@@ -171,7 +171,7 @@ function fEscritorio() {
      puntuacion = data.list[i].puntuacion;
      ultimosP += "<tr>"
      ultimosP += "<td>";
-     ultimosP += "<a href='http://prolibrary-jguisado.rhcloud.com/prolibrary/jsp#/libro/view/" + id + "'>" + tituloP + "</a>";
+     ultimosP += "<a href='http://prolibrary-jguisado.rhcloud.com/prolibrary/jsp#/libro/view/" + idP + "'>" + tituloP + "</a>";
      ultimosP += "</td>";
      ultimosP += "<td class='td-padding'>";
      ultimosP += puntuacion;
@@ -195,7 +195,7 @@ function fEscritorio() {
      isbn = data.list[i].isbn;
      ultimosC += "<tr>"
      ultimosC += "<td>";
-     ultimosC += "<a href='http://prolibrary-jguisado.rhcloud.com/prolibrary/jsp#/cliente/view/" + id + "'>" + nombre + " " + apellidos + "</a>";
+     ultimosC += "<a href='http://prolibrary-jguisado.rhcloud.com/prolibrary/jsp#/cliente/view/" + idC + "'>" + nombre + " " + apellidos + "</a>";
      ultimosC += "</td>";
      ultimosC += "<td class='td-padding'>";
      ultimosC += tipo;

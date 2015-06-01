@@ -22,7 +22,7 @@
 %>
 
 <form class="form-horizontal" role="form" action="#" id="usuarioForm" name="formulario">
-    <div class="form-group">
+    <div class="form-group id-oculto">
         <label class="col-sm-2 control-label" for="id">Id:</label>
         <div class="col-sm-2">
             <input type="text" id="id" class="form-control"  name="id" placeholder="id" />
@@ -37,7 +37,7 @@
     <div class="form-group">
         <label class="col-sm-2 control-label"  for="password">Contraseña:</label>
         <div class="col-sm-4">
-            <input type="text" id="password" class="form-control"  name="password" size="15" placeholder="Pon aquí tu contraseña" />
+            <input type="password" id="password" class="form-control"  name="password" size="15" placeholder="Pon aquí tu contraseña" />
         </div>
     </div>
     

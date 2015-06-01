@@ -342,6 +342,12 @@ ul li {
     display: none;
 }
 
+.id-oculto {
+    display: none;
+}
+
+/**/
+
 .bg-login {
     background: url(../../images/fondo-login.png) no-repeat;
     height: 1080px;
