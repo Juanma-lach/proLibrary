@@ -283,9 +283,13 @@ ul li {
 }
 
 .h1escritorio {
-    font-size: 23px;
-    margin-top: 70px;
-    margin-left: 50px;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 55px;
+    background-color: #176185;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
 }
 
 .centered {
@@ -332,4 +336,23 @@ ul li {
 .euros {
     padding: 0;
     margin-top: 7px;
+}
+
+#selectFilteroperator {
+    display: none;
+}
+
+.bg-login {
+    background: url(../../images/fondo-login.png) no-repeat;
+    height: 1080px;
+    position: fixed;
+}
+
+.boton-centrado {
+    margin-left: 30%;
+}
+
+.boton-centrado:nth-child(3) {
+    margin-top: 12px;
+    margin-left: 25%;
 }

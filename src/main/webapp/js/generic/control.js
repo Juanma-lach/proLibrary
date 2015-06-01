@@ -173,8 +173,8 @@ control.prototype.list = function (place, objParams, callback, oModel, oView) {
             //$('#newButton').prop("href", 'jsp#/' + thisObject.clase + '/new/' + param().getStrSystemFilters(objParams))
             $('#newButton').prop("href", 'jsp#/' + thisObject.clase + '/new/' + 'systemfilter=' + objParams["systemfilter"] + '&systemfilteroperator=' + objParams["systemfilteroperator"] + '&systemfiltervalue=' + objParams["systemfiltervalue"]);
         }
-        $('.tipousuario').hide();
-        $('.tipocliente').hide();
+        $('.modal-body > .tipousuario').hide();
+        $('.modal-body > .tipocliente').hide();
         
     } else {
         alert("Lo siento pero no tienes permiso para ejecutar esta operación");

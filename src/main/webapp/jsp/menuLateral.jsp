@@ -44,6 +44,12 @@
                     <li><a class="list-group-item" href="jsp#/tipocliente" title="Listado de Tipos de Clientes">Listado de Tipos</a></li>
                 </ul>
             </li>
+            <li><p href="#" class="desplegable list-group-item" title="Gestión de compras"><b class="glyphicon glyphicon-certificate"> </b>Compras</p>
+                <ul class="subnavegador">
+                    <li><a class="list-group-item" href="jsp#/compra" title="Lista de Compras">Lista de Compras</a></li>			
+                    <li><a class="list-group-item" href="jsp#/compra/new" title="Crear una nueva Compra">Crear una nueva compra</a></li>
+                </ul>
+            </li>
         </ul>
     </div>
 </div>

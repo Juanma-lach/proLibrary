@@ -19,27 +19,65 @@ package net.daw.helper;
 
 public class ConnectionClassHelper {
 
+    public static Boolean getOpenShift() {
+        Boolean openshift = false;
+        return openshift;
+    }
+
     public static String getDatabaseName() {
-        return "prolibrery";
+        if (ConnectionClassHelper.getOpenShift()) {
+            //return System.getenv("OPENSHIFT_APP_NAME");
+            return "prolibrary";
+        } else {
+            return "prolibrery";
+        }
     }
 
     public static String getDatabaseLogin() {
-        return "root";
+        if (ConnectionClassHelper.getOpenShift()) {
+            //return System.getenv("OPENSHIFT_MYSQL_DB_USERNAME");
+            return "admin1C7REmk";
+        } else {
+            return "root";
+        }
     }
 
     public static String getDatabasePassword() {
-        return "bitnami";
+        if (ConnectionClassHelper.getOpenShift()) {
+            //return System.getenv("OPENSHIFT_MYSQL_DB_PASSWORD");
+            return "DTnjpdj1Ku9-";
+        } else {
+            return "bitnami";
+        }
     }
 
     public static String getDatabasePort() {
-        return "3306";
+        if (ConnectionClassHelper.getOpenShift()) {
+            //return System.getenv("OPENSHIFT_MYSQL_DB_PORT");
+            //return System.getenv("OPENSHIFT_DIY_PORT");
+            return "3306";
+        } else {
+            return "3306";
+        }
     }
 
     public static String getDatabaseHost() {
-        return "127.0.0.1";
+        if (ConnectionClassHelper.getOpenShift()) {
+            //return System.getenv("OPENSHIFT_MYSQL_DB_IP");
+            //return System.getenv("OPENSHIFT_DIY_IP");
+            return "127.5.105.2";
+
+        } else {
+            return "localhost";
+        }
     }
 
     public static String getConnectionChain() {
-        return "jdbc:mysql://" + ConnectionClassHelper.getDatabaseHost() + ":" + ConnectionClassHelper.getDatabasePort() + "/" + ConnectionClassHelper.getDatabaseName();
+        if (ConnectionClassHelper.getOpenShift()) {
+            //return "jdbc:" + System.getenv("OPENSHIFT_MYSQL_DB_URL") + ConnectionClassHelper.getDatabaseName();
+            return "jdbc:mysql://" + ConnectionClassHelper.getDatabaseHost() + ":" + ConnectionClassHelper.getDatabasePort() + "/" + ConnectionClassHelper.getDatabaseName();
+        } else {
+            return "jdbc:mysql://" + ConnectionClassHelper.getDatabaseHost() + ":" + ConnectionClassHelper.getDatabasePort() + "/" + ConnectionClassHelper.getDatabaseName();
+        }
     }
 }
