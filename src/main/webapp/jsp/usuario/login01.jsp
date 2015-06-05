@@ -38,7 +38,7 @@
                     </div>
 
                     <div class="partePass">
-                        <label class="control-label" for="password" style="margin-top: 15px">Contraseña:</label>
+                        <label class="control-label" for="inputPassword" style="margin-top: 15px">Contraseña:</label>
                         <input value="" class="form-control" type="password" id="inputPassword" placeholder="Contraseña"  required="" name="password" />                                                               
                     </div>
 

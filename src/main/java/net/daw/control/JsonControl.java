@@ -27,11 +27,9 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import net.daw.control.operation.generic.specific.implementation.AlumnoControlOperationGenSpImpl;
 import net.daw.control.operation.generic.specific.implementation.ClienteControlOperationGenSpImpl;
 import net.daw.control.operation.generic.specific.implementation.CompraControlOperationGenSpImpl;
 import net.daw.control.operation.generic.specific.implementation.LibroControlOperationGenSpImpl;
-import net.daw.control.operation.generic.specific.implementation.ProyectoControlOperationGenSpImpl;
 import net.daw.control.operation.generic.specific.implementation.StockControlOperationGenSpImpl;
 import net.daw.control.operation.generic.specific.implementation.TipoclienteControlOperationGenSpImpl;
 import net.daw.control.operation.generic.specific.implementation.TipousuarioControlOperationGenSpImpl;
@@ -102,16 +100,6 @@ public class JsonControl extends HttpServlet {
                         UsuarioControlRouteGenSpImpl oUsuarioRoute = new UsuarioControlRouteGenSpImpl();
                         UsuarioControlOperationGenSpImpl oUsuarioControlOperation = new UsuarioControlOperationGenSpImpl(request);
                         jsonResult = oUsuarioRoute.execute(request, oUsuarioControlOperation);
-                        break;
-                    case "proyecto":
-                        ProyectoControlRouteGenSpImpl oProyectoRoute = new ProyectoControlRouteGenSpImpl();
-                        ProyectoControlOperationGenSpImpl oProyectoControlOperation = new ProyectoControlOperationGenSpImpl(request);
-                        jsonResult = oProyectoRoute.execute(request, oProyectoControlOperation);
-                        break;
-                    case "alumno":
-                        AlumnoControlRouteGenSpImpl oAlumnoRoute = new AlumnoControlRouteGenSpImpl();
-                        AlumnoControlOperationGenSpImpl oAlumnoControlOperation = new AlumnoControlOperationGenSpImpl(request);
-                        jsonResult = oAlumnoRoute.execute(request, oAlumnoControlOperation);
                         break;
                     case "tipocliente":
                         TipoclienteControlRouteGenSpImpl oTipoclienteRoute = new TipoclienteControlRouteGenSpImpl();

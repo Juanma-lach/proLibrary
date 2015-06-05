@@ -82,7 +82,7 @@ body{
     margin-right: 0;
 }
 
- b {
+b {
     margin-right: 10px;
 }
 
@@ -94,10 +94,10 @@ body{
 /* Intro de la pagina de inicio */
 .intro {
     position: relative;
-    background: url(../../images/entrada.jpg) no-repeat center center;
-    background-size: 100% 500px;
+    background: url(../../images/cabecera.jpg) no-repeat center center;
+    background-size: 100% 400px;
     top: 20px;
-    padding: 370px 0 75px 0;
+    padding: 370px 0 0 0;
     color: white;
 }
 
@@ -256,7 +256,7 @@ ul li {
     padding: 0;
     padding-bottom: 20px;
     margin-top: 20px;
-    
+
 }
 
 .bloque:nth-child(2),.bloque:nth-child(5) {
@@ -295,6 +295,7 @@ ul li {
 .centered {
     text-align: center;
     padding-top: 10px;
+    padding-bottom: 10px;
     background-color: #176185;
     color: white;
 }
@@ -361,4 +362,65 @@ ul li {
 .boton-centrado:nth-child(3) {
     margin-top: 12px;
     margin-left: 25%;
+}
+
+/* INICIO */
+
+.back-white {
+    background-color: white;
+}
+
+.inicio-padding {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.inicio-padding-ultimo {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.inicio-padding-lista {
+    padding-bottom: 55px;
+}
+
+@media (max-width: 992px) {
+
+    .sidebar {
+        width: 60px;
+        margin-left: 0;
+    }
+
+    .subnavegador > li > a, .subnavegador > li > a:visited {
+        font-size: 13px;
+        font-weight: 600;
+        background-color: #2e7091;
+        padding-left: 0;
+
+    }
+    
+    .list-group-item {
+        padding: 10px 0;
+    }
+    
+    .glyphicon{
+        margin-left: 22px ;
+    }
+    
+    #action-min {
+        margin-left: 50px;
+    }
+    
+    .position-top {
+        position: absolute;
+        top: 0;
+        right: 0px;
+    }
+    
+    .position-top:first-child {
+        position: absolute;
+        top: 0;
+        right: 60px;
+    }
 }

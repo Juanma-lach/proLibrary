@@ -67,7 +67,6 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="porcien" id="bs-example-navbar-collapse-1">
                         <ul class="botones-izq">
-                            <li><a href="jsp?ob=usuario&op=inicio">Inicio <span class="sr-only">(current)</span></a></li>
                         </ul>
 
                         <%if (user != null) {%>

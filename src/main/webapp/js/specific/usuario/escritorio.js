@@ -239,5 +239,31 @@ function fEscritorio() {
      countL += "</td>";
      countL += "</tr>"
      $("#countL").html(countL);
+     }});
+     
+     $.ajax({
+     url: "http://prolibrary-jguisado.rhcloud.com/prolibrary/json?ob=compra&op=getpage&order=id&ordervalue=desc",
+     type: "GET",
+     dataType: "json",
+     success: function (data) {
+     trans = "<table class='tab-border'>";
+     for (i = 0; i < 4; i++) {
+     nombreT = data.list[i].obj_cliente.nombre;
+     apellidoT = data.list[i].obj_cliente.apellidos;
+     tituloT = data.list[i].obj_libro.titulo;
+     trans += "<tr>"
+     trans += "<td>";
+     trans += nombreT + " " + apellidoT;
+     trans += "</td>";
+     trans += "<td class='td-padding'>";
+     trans += " Ha comprado ";
+     trans += "</td>";
+     trans += "<td class='td-padding'>";
+     trans += tituloT;
+     trans += "</td>";
+     trans += "</tr>"
+     }
+     trans += "</table>";
+     $("#transacciones").html(trans);
      }});*/
 }

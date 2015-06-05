@@ -23,7 +23,7 @@
 <div class="sidebar panel panel-primary">
     <div class="list-group">
         <ul class="navegador">
-            <li><a class="list-group-item" href="jsp?ob=usuario&op=escritorio" title="Escritorio"><b class="glyphicon glyphicon-tasks"> </b>Escritorio</a></li>
+            <li><a class="libro-min list-group-item" href="jsp?ob=usuario&op=escritorio" title="Escritorio"><b class="glyphicon glyphicon-tasks"> </b>Escritorio</a></li>
             <li><p href="#" class="desplegable list-group-item" title="Gestión de usuarios"><b class="glyphicon glyphicon-user"> </b>Usuarios</p>
                 <ul class="subnavegador">
                     <li><a class="list-group-item" href="jsp#/usuario" title="Lista de Usuarios">Lista de Usuarios</a></li>			

@@ -11,31 +11,31 @@
 
 <h1 class="h1escritorio col-sm-10" style=" margin-left: 50px;">Escritorio</h1>
 
-<div id="bloque1" class="bloque col-md-3 col-sm-3 col-sm-offset-2 col-md-offset-1">
+<div id="bloque1" class="bloque col-md-3 col-sm-3 col-sm-offset-2 col-md-offset-1 col-xs-12">
     <p class="centered">Últimos Libros</p>
     <div id="ultimosLibros" class="paddiv"></div>
 </div>
-<div id="bloque2" class="bloque col-md-3 col-sm-3 col-sm-offset-2 col-md-offset-1">
+<div id="bloque2" class="bloque col-md-3 col-sm-3 col-sm-offset-2 col-md-offset-1 col-xs-12">
     <p class="centered">Libros mejor valorados</p>
     <div id="librosPuntuados" class="paddiv"></div>
 </div>
-<div id="bloque3" class="bloque col-md-3 col-sm-3 col-sm-offset-2 col-md-offset-1">
+<div id="bloque3" class="bloque col-md-3 col-sm-3 col-sm-offset-2 col-md-offset-1 col-xs-12">
     <p class="centered">Últimos Clientes</p>
     <div id="ultimosClientes" class="paddiv"></div>
 </div>
 
-<div class="bloque col-md-7 col-sm-9 col-sm-offset-2 col-md-offset-1">
+<div class="bloque col-md-7 col-sm-9 col-sm-offset-2 col-md-offset-1 col-xs-12">
     <p class="centered">Últimas Transacciones</p>
     <div id="transacciones" class="col-md-12 col-sm-3"></div>
 </div>
 
-<div class="bloque col-md-3 col-sm-9">
+<div class="bloque col-md-3 col-sm-9 col-xs-12" id="action-min">
     <p class="centered">Acciones de Compra</p>
     <a href="jsp#/compra/new" role="button" class="btn btn-primary boton-centrado">Nueva Compra</a>
     <a href="jsp#/compra" role="button" class="btn btn-primary boton-centrado">Listado de Compras</a>
 </div>
 
-<div class="bloque bloque-superior col-md-10" style=" margin-left: 50px;">
+<div class="bloque bloque-superior col-md-10 col-xs-12" style=" margin-left: 50px;">
     <div id="countC" class="col-md-3 col-sm-3 col-sm-offset-2"></div>
     <div id="countL" class="col-md-3 col-sm-3 col-sm-offset-2"></div>
 </div>
