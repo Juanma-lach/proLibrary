@@ -103,7 +103,7 @@ view.prototype.getPageLinks = function (url, page_number, total_pages, neighborh
     return vector;
 };
 view.prototype.getPanel = function (titulo, contenido) {
-    return '<div class="panel panel-default margen-superior"><div class="panel-heading"><h1>' + titulo + '</h1></div><div class="panel-body">' + contenido + '</div></div>';
+    return '<div class="panel panel-default inicio-margin margen-superior"><div class="panel-heading"><h1>' + titulo + '</h1></div><div class="panel-body">' + contenido + '</div></div>';
 };
 view.prototype.getEmptyForm = function () {
     $.when(ajax().ajaxCallSync(path + '/jsp?ob=' + this.clase + '&op=form&mode=1', 'GET', '')).done(function (data) {
