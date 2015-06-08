@@ -233,7 +233,8 @@ view.prototype.doResultOperationNotifyToUser = function (place, resultadoStatus,
         })
     } else {
         $('#modal01').on('hidden.bs.modal', function () {
-            $(place).empty();
+            //$(place).empty();
+            window.location.href = "jsp#";
         });
     }
     ;

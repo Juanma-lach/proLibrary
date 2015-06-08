@@ -20,7 +20,7 @@ package net.daw.helper;
 public class ConnectionClassHelper {
 
     public static Boolean getOpenShift() {
-        Boolean openshift = false;
+        Boolean openshift = true;
         return openshift;
     }
 
@@ -29,7 +29,7 @@ public class ConnectionClassHelper {
             //return System.getenv("OPENSHIFT_APP_NAME");
             return "prolibrary";
         } else {
-            return "prolibrery";
+            return "prolibrary";
         }
     }
 

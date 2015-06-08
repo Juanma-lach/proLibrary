@@ -85,7 +85,7 @@ control.prototype.remove = function (place, id, oModel, oView) {
     oDocumentoModel.loadAggregateViewOne(id);
     $(place).append(oView.getPanel("Borrado de " + this.clase, oView.getObjectTable(oDocumentoModel.getCachedPrettyFieldNames(), oDocumentoModel.getCachedOne(), oDocumentoModel.getCachedFieldNames())));
     $(place).append('<div id=\"result\">¿Seguro que desea borrar el registro?</div>');
-    $(place).append('<a class="btn btn-danger" id="btnBorrarSi" href="#">Sí, borrar</a>');
+    $(place).append('<a class="btn btn-danger" id="btnBorrarSi" href="jsp#/">Sí, borrar</a>');
     $('#btnBorrarSi').unbind('click');
     $('#btnBorrarSi').click(function (event) {
         resultado = oModel.removeOne(id);

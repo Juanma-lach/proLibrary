@@ -32,7 +32,7 @@
     <div class="form-group">
         <label class="col-sm-2 control-label" for="obj_cliente_id">Cliente: </label> 
         <div class="col-sm-2">              
-            <input  class="form-control"  id="obj_cliente_id" class="input-mini" name="id_cliente" type="text" size="5" maxlength="5" />  
+            <input readonly="true" class="form-control"  id="obj_cliente_id" class="input-mini" name="id_cliente" type="text" size="5" maxlength="5" />  
         </div>
         <div class="col-sm-1">              
             <a class="btn btn-primary btn-sm" id="obj_cliente_button" href="#"><i class="glyphicon glyphicon-search"></i></a>
@@ -43,7 +43,7 @@
     <div class="form-group">
         <label class="col-sm-2 control-label" for="obj_libro_id">Libro: </label> 
         <div class="col-sm-2">              
-            <input  class="form-control"  id="obj_libro_id" class="input-mini" name="id_libro" type="text" size="5" maxlength="5" />  
+            <input readonly="true" class="form-control"  id="obj_libro_id" class="input-mini" name="id_libro" type="text" size="5" maxlength="5" />  
         </div>
         <div class="col-sm-1">              
             <a class="btn btn-primary btn-sm" id="obj_libro_button" href="#"><i class="glyphicon glyphicon-search"></i></a>

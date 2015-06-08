@@ -13,7 +13,7 @@
 
 <div id="bloque1" class="bloque col-md-3 col-sm-3 col-sm-offset-2 col-md-offset-1 col-xs-12">
     <p class="centered">Últimos Libros</p>
-    <div id="ultimosLibros" class="paddiv"></div>
+    <div id="ultimosLibros" class="paddiv text-center"></div>
 </div>
 <div id="bloque2" class="bloque col-md-3 col-sm-3 col-sm-offset-2 col-md-offset-1 col-xs-12">
     <p class="centered">Libros mejor valorados</p>

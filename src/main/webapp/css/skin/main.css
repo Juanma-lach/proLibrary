@@ -308,12 +308,20 @@ ul li {
     padding-left: 20px;
     padding-right: 20px;
 }
+
+#countC, #countL {
+    padding-top: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
 /* SPINNER */
 
 .spinner {
-    background: url(../../images/spinner.gif) no-repeat;
-    height: 318px;
-    background-size: 200px 100px;
+    background: url(../../images/ajax-loading.gif) no-repeat;
+    height: 40px;
 }
 
 .porcien {
@@ -368,6 +376,10 @@ ul li {
     margin-left: 25%;
 }
 
+.login-bloque {
+    background-color: white;
+}
+
 /* INICIO */
 
 .back-white {
@@ -388,6 +400,7 @@ ul li {
 .inicio-padding-lista {
     padding-bottom: 55px;
 }
+
 
 @media (max-width: 992px) {
 
